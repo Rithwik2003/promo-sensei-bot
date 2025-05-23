@@ -6,7 +6,7 @@ Promo Sensei is an intelligent Slack-integrated assistant that scrapes live e-co
 
 ## ✨ Features
 
-- 🔎 Search offers like “flat 50% off shoes” or “lipsticks under ₹300”
+- 🔎 Search offers like “flat 50% off shoes”
 - 🛒 Scrapes deals from **Nykaa**, **Puma** and **Ajio**
 - 🧠 Uses **FAISS + SentenceTransformers** to store offers
 - 💬 Integrated with **Slack** via `/promosensei` command
@@ -133,6 +133,7 @@ Command:
 ![Screenshot 2025-05-24 015550](https://github.com/user-attachments/assets/0e7b23f7-30df-4e64-a35e-3edde9719505)
 
 Output:
+
 ![image](https://github.com/user-attachments/assets/58959b10-480e-463c-9fe7-b9f4485893e0)
 
 → Re-scrapes all websites and updates the database
