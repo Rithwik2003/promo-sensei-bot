@@ -137,3 +137,43 @@ Output:
 ![image](https://github.com/user-attachments/assets/58959b10-480e-463c-9fe7-b9f4485893e0)
 
 → Re-scrapes all websites and updates the database
+
+
+🧠 Key Design Decisions (RAG + LLM Integration)
+
+
+🔍 Why Retrieval-Augmented Generation (RAG)?
+
+Rather than letting an LLM guess answers from scratch, RAG ensures responses are grounded in real, up-to-date offer data scraped from Nykaa, Puma, Flipkart, and Ajio. This allows Promo Sensei to answer questions like:
+
+"Are there any shoes under ₹1000 with 40% off?"
+
+...based only on verifiable scraped results, not guesses.
+
+
+⚙️ How RAG Works in Promo Sensei
+
+Scraped Offers (via scraper.py) are saved in offers.json
+
+Offers are embedded into vectors using sentence-transformers (MiniLM) in ingest_to_vector_db.py
+
+User queries are embedded and compared against offer vectors using FAISS (semantic search)
+
+Top-k offers are retrieved and passed as context to the LLM
+
+LLM generates the final response with instructions like:
+"Only answer based on these deals, be helpful and precise."
+
+
+🤖 Why OpenRouter + GPT-3.5
+
+OpenRouter lets us access models like GPT-3.5 or GPT-4 reliably and affordably
+
+Avoids rate limits or credit issues tied to OpenAI keys
+
+Easy plug-and-play with our existing rag_query.py using OpenAI-compatible APIlaywright handles scrolling, lazy loading, and dynamic JavaScript better than requests/BeautifulSoup — which is crucial for sites like Ajio, Puma, and Nykaa.
+
+
+👨‍💻 Author
+
+Subramanya Rithwik Jakka – @Rithwik2003
