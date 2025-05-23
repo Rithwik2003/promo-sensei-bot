@@ -78,6 +78,8 @@ python slackbot.py
 
 ✅ Slash Commands Supported in Slack
 
+
+1.
 ```bash
 /promosensei search <query>
 ```
@@ -89,6 +91,8 @@ Command:
 Output:
 ![Screenshot 2025-05-24 013203](https://github.com/user-attachments/assets/2488c0a7-aaad-4035-95bd-043c2e1116e7)
 
+
+2.
 ```bash
 /promosensei brand <name>
 ```
@@ -101,6 +105,8 @@ Output:
 ![Screenshot 2025-05-24 015332](https://github.com/user-attachments/assets/7e70795a-1205-486d-b07f-cd9f1b82292e)
 ![Screenshot 2025-05-24 015410](https://github.com/user-attachments/assets/b7824f15-7b7f-4a64-9162-ec7071b557c6)
 
+
+3.
 ```bash
 /promosensei summary
 ```
@@ -110,10 +116,14 @@ Command:
 ![Screenshot 2025-05-24 014517](https://github.com/user-attachments/assets/a6cdc48f-1c70-4209-a5f1-7fb74e418e88)
 
 Output:
-![Screenshot 2025-05-24 014552](https://github.com/user-attachments/assets/4ff59de4-1123-41a7-86ae-02da09385966)
+![Screenshot 2025-05-24 014824](https://github.com/user-attachments/assets/29e8c5d0-70c2-4eae-a5fe-09b97b08d891)
+![Screenshot 2025-05-24 014838](https://github.com/user-attachments/assets/ed726051-5716-4fa1-8aa8-21a0d19c4908)
+![Screenshot 2025-05-24 014903](https://github.com/user-attachments/assets/7eb58742-7e53-42a4-9eda-b90cb707ca69)
 
 → Summarizes all indexed offers
 
+
+4.
 ```bash
 /promosensei refresh
 ```
@@ -123,8 +133,6 @@ Command:
 ![Screenshot 2025-05-24 015550](https://github.com/user-attachments/assets/0e7b23f7-30df-4e64-a35e-3edde9719505)
 
 Output:
-![Screenshot 2025-05-24 014824](https://github.com/user-attachments/assets/29e8c5d0-70c2-4eae-a5fe-09b97b08d891)
-![Screenshot 2025-05-24 014838](https://github.com/user-attachments/assets/ed726051-5716-4fa1-8aa8-21a0d19c4908)
-![Screenshot 2025-05-24 014903](https://github.com/user-attachments/assets/7eb58742-7e53-42a4-9eda-b90cb707ca69)
+![image](https://github.com/user-attachments/assets/58959b10-480e-463c-9fe7-b9f4485893e0)
 
 → Re-scrapes all websites and updates the database
