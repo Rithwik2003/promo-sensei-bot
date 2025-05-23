@@ -39,38 +39,40 @@ cd promo-sensei-bot
 
 📦 2. Install Dependencies
 
+```bash
 pip install -r requirements.txt
-
 playwright install
 
 🔐 3. Create .env File
 
+```bash
 OPENROUTER_API_KEY=sk-your-openrouter-key
-
 SLACK_BOT_TOKEN=xoxb-your-slack-bot-token
-
 SLACK_APP_TOKEN=xapp-your-slack-app-token
 
 ✅ 4. Scrape + Index Offers
 
+```bash
 python scraper.py
-
 python ingest_to_vector_db.py
 
 🧠 5. Ask via CLI
 
+```bash
 python rag_query.py
 
-# Enter your query: "Type your query here"
+> Enter your query: "Type your query here"
 
-### 💬 Slack Integration
+💬 Slack Integration
 
 ▶️ Run Slack Bot
 
+```bash
 python slackbot.py
 
 ✅ Slash Commands Supported in Slack
 
+```bash
 /promosensei search <query>
 
 e.g.,
@@ -80,16 +82,18 @@ Command:
 
 Output:
 
-c:\Pictures\Screenshots\Screenshot 2025-05-24 013203.png
-
+```bash
 /promosensei brand <name>
 
 e.g.,
 
 
-
+```bash
 /promosensei summary
+
 → Summarizes all indexed offers
 
+```bash
 /promosensei refresh
+
 → Re-scrapes all websites and updates the database
